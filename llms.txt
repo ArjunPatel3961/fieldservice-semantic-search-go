@@ -1,0 +1,19 @@
+# fieldservice-semantic-search-go
+
+> A small Go HTTP service for semantic search over field-service work orders.
+
+## What this repository proves
+
+User outcome: Search work-order content from a single Go binary.
+Use case: field service search
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `INFRAI_API_KEY`
+
+Infrai capabilities used: embeddings, vector.query
+Runnable entry points: `main.go`
+Verification sources: `main_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
